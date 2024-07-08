@@ -18,7 +18,7 @@ and a string) and return true or false depending on whether the string is found 
 
 SOLUTION:
 
-Uses a variation of BFS (breadth-first search). At each point, we have all possible path stored up until the ith letter
+Uses a variation of BFS (breadth-first search). At each point, we have all possible paths stored up until the ith letter
 of the word. Then we look at the (i+1)th letter, and see if it can be reached from any of the ends of the existing paths 
 *without* overlapping with the existing path. If so we store all possible longer paths and repeat with the next letter 
 of the word. If there's a path at the end, this means we have found the full word. If not, then a path does not exist.
